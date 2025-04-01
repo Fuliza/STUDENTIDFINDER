@@ -21,7 +21,7 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            Lost Something Important?
+            Lost your Student ID?
             <span className="text-primary block mt-2">
               We&apos;ll Help You Find It
             </span>
@@ -32,9 +32,9 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            Our platform connects people who have lost items with those who have
-            found them, making the recovery process simple, secure, and
-            stress-free.
+            Our platform connects sudents who have lost their student ID with
+            those who have found them, making the recovery process simple,
+            secure, and stress-free.
           </motion.p>
           <motion.div
             className="flex flex-col sm:flex-row gap-4 justify-center"
@@ -54,12 +54,6 @@ export function HeroSection() {
                 Report Found Id
               </Link>
             </Button>
-            {/* <Button size="lg" variant="secondary" className="gap-2" asChild>
-              <Link href="/view-reports">
-                <List className="h-5 w-5" />
-                View Reports
-              </Link>
-            </Button> */}
           </motion.div>
         </motion.div>
 
@@ -70,7 +64,7 @@ export function HeroSection() {
           transition={{ duration: 0.7, delay: 0.8 }}
         >
           <Image
-            src="/lost.jpg"
+            src="/lost&.webp"
             alt="FindMyID Platform Dashboard"
             className="w-full h-auto"
             height={600}

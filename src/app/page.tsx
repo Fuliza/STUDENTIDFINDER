@@ -1,12 +1,18 @@
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { CheckCircle, Search, Shield, UserRound } from "lucide-react"
-import Link from "next/link"
-import { AnimatedCounter } from "@/components/animated-counter"
-import { AnimatedServices } from "@/components/animated-services"
-import { HeroSection } from "@/components/hero-section"
-import { TeamSection } from "@/components/team-section"
-import Image from "next/image"
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { CheckCircle, Search, Shield, UserRound } from "lucide-react";
+import Link from "next/link";
+import { AnimatedCounter } from "@/components/animated-counter";
+import { AnimatedServices } from "@/components/animated-services";
+import { HeroSection } from "@/components/hero-section";
+import { TeamSection } from "@/components/team-section";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -14,20 +20,37 @@ export default function Home() {
       <header className="sticky top-0 z-40 border-b bg-background/95 bg-gradient-to-r from-blue-500 to-purple-500 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between py-4">
           <Link href="/" className="flex items-center space-x- ">
-            <Image src="/logo.jpeg" alt="LostFound Logo" width={60} height={40} />
+            <Image
+              src="/logo.jpeg"
+              alt="LostFound Logo"
+              width={60}
+              height={40}
+            />
             {/* <span className="text-2xl font-bold text-primary">LostFound</span> */}
           </Link>
           <nav className="hidden md:flex gap-6 bg-bgprimary">
-            <Link href="#how-it-works" className="text-sm font-medium hover:text-primary hover:underline">
+            <Link
+              href="#how-it-works"
+              className="text-sm font-medium hover:text-primary hover:underline"
+            >
               How It Works
             </Link>
-            <Link href="#services" className="text-sm font-medium hover:text-primary hover:underline">
+            <Link
+              href="#services"
+              className="text-sm font-medium hover:text-primary hover:underline"
+            >
               Services
             </Link>
-            <Link href="#impact" className="text-sm font-medium hover:text-primary hover:underline">
+            <Link
+              href="#impact"
+              className="text-sm font-medium hover:text-primary hover:underline"
+            >
               Our Impact
             </Link>
-            <Link href="#team" className="text-sm font-medium hover:text-primary hover:underline">
+            <Link
+              href="#team"
+              className="text-sm font-medium hover:text-primary hover:underline"
+            >
               Team
             </Link>
           </nav>
@@ -48,9 +71,12 @@ export default function Home() {
         <section id="how-it-works" className="py-20 bg-muted/50">
           <div className="container">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold tracking-tight mb-4 text-blue-800">How It Works</h2>
+              <h2 className="text-3xl font-bold tracking-tight mb-4 text-blue-800">
+                How It Works
+              </h2>
               <p className=" max-w-2xl mx-auto text-blue-600">
-                Our platform makes it easy to report and recover lost ids through a simple process
+                Our platform makes it easy to report and recover lost IDs
+                through a simple process
               </p>
             </div>
 
@@ -64,7 +90,8 @@ export default function Home() {
                 </CardHeader>
                 <CardContent>
                   <CardDescription className="text-blue-600">
-                    Quickly report your lost ID with details and optional photos to help with identification.
+                    Quickly report your lost ID with details and optional photos
+                    to help with identification.
                   </CardDescription>
                 </CardContent>
               </Card>
@@ -78,7 +105,8 @@ export default function Home() {
                 </CardHeader>
                 <CardContent>
                   <CardDescription className="text-blue-600">
-                    Our system matches lost and found reports, and verifies ownership through secure verification.
+                    Our system matches lost and found reports, and verifies
+                    ownership through secure verification.
                   </CardDescription>
                 </CardContent>
               </Card>
@@ -92,7 +120,8 @@ export default function Home() {
                 </CardHeader>
                 <CardContent>
                   <CardDescription className="text-blue-600">
-                    Once verified, arrange safe return of your id through our secure handover process.
+                    Once verified, arrange safe return of your ID through our
+                    secure handover process.
                   </CardDescription>
                 </CardContent>
               </Card>
@@ -103,7 +132,9 @@ export default function Home() {
         <section id="services" className="py-20">
           <div className="container">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold tracking-tight mb-4 text-purple-800">Our Services</h2>
+              <h2 className="text-3xl font-bold tracking-tight mb-4 text-purple-800">
+                Our Services
+              </h2>
               <p className=" max-w-2xl mx-auto text-purple-600">
                 We offer comprehensive solutions for lost and found School IDs
               </p>
@@ -113,12 +144,18 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="impact" className="py-20 bg-gradient-to-br from-purple-500 to-pink-600 text-primary-foreground">
+        <section
+          id="impact"
+          className="py-20 bg-gradient-to-br from-purple-500 to-pink-600 text-primary-foreground"
+        >
           <div className="container">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold tracking-tight mb-4">Our Impact</h2>
+              <h2 className="text-3xl font-bold tracking-tight mb-4">
+                Our Impact
+              </h2>
               <p className="text-primary-foreground/80 max-w-2xl mx-auto">
-                Making a difference in people&apos;s lives through our lost and found platform
+                Making a difference in people&apos;s lives through our lost and
+                found platform
               </p>
             </div>
 
@@ -127,9 +164,9 @@ export default function Home() {
                 <div className="text-5xl font-bold mb-4 text-yellow-300">
                   <AnimatedCounter value={1500} />+
                 </div>
-                <h3 className="text-xl font-medium mb-2">Items Recovered</h3>
+                <h3 className="text-xl font-medium mb-2">IDs Recovered</h3>
                 <p className="text-primary-foreground/80">
-                  Successfully reunited thousands of people with their lost belongings
+                  Successfully reunited thousands of people with their lost IDs
                 </p>
               </div>
 
@@ -139,7 +176,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-medium mb-2">Active Users</h3>
                 <p className="text-primary-foreground/80">
-                  Growing community of users helping each other recover lost items
+                  Growing community of users helping each other recover lost IDs
                 </p>
               </div>
 
@@ -148,7 +185,9 @@ export default function Home() {
                   <AnimatedCounter value={98} />%
                 </div>
                 <h3 className="text-xl font-medium mb-2">Success Rate</h3>
-                <p className="text-primary-foreground/80">High success rate for items reported within 48 hours</p>
+                <p className="text-primary-foreground/80">
+                  High success rate for IDs reported within 48 hours
+                </p>
               </div>
             </div>
           </div>
@@ -157,7 +196,9 @@ export default function Home() {
         <section id="testimonials" className="py-20">
           <div className="container">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold tracking-tight mb-4 text-green-800">What Our Users Say</h2>
+              <h2 className="text-3xl font-bold tracking-tight mb-4 text-green-800">
+                What Our Users Say
+              </h2>
               <p className=" max-w-2xl mx-auto text-green-600">
                 Real stories from people who have used our platform
               </p>
@@ -171,15 +212,18 @@ export default function Home() {
                       <UserRound className="h-5 w-5 text-green-800" />
                     </div>
                     <div>
-                      <CardTitle className="text-lg text-green-900">Sarah Johnson</CardTitle>
-                      <CardDescription>Student</CardDescription>
+                      <CardTitle className="text-lg text-green-900">
+                        Sarah Nafula
+                      </CardTitle>
+                      <CardDescription>Student at Pwani</CardDescription>
                     </div>
                   </div>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">
-                  &apos;I lost my student ID during finals week and was panicking. Within 24 hours of reporting it on
-                    FindMyID, someone had found it and I got it back. Lifesaver&apos;
+                    &apos;I lost my student ID during finals week and was
+                    panicking. Within 24 hours of reporting it on FindMyID,
+                    someone had found it and I got it back. Lifesaver&apos;
                   </p>
                 </CardContent>
               </Card>
@@ -191,15 +235,18 @@ export default function Home() {
                       <UserRound className="h-5 w-5 text-green-800" />
                     </div>
                     <div>
-                      <CardTitle className="text-lg text-green-900">Lakisha Kipchumba</CardTitle>
-                      <CardDescription>Student at pwani</CardDescription>
+                      <CardTitle className="text-lg text-green-900">
+                        Lakisha Kipchumba
+                      </CardTitle>
+                      <CardDescription>Student at Pwani</CardDescription>
                     </div>
                   </div>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">
-                  &apos;Lost my wallet with all my cards and ID. The verification system made sure it was returned safely
-                    to me without any issues. Highly recommend&apos;
+                    &apos;Lost my wallet with all my cards and ID. The
+                    verification system made sure it was returned safely to me
+                    without any issues. Highly recommend&apos;
                   </p>
                 </CardContent>
               </Card>
@@ -211,15 +258,18 @@ export default function Home() {
                       <UserRound className="h-5 w-5 text-green-800" />
                     </div>
                     <div>
-                      <CardTitle className="text-lg text-green-900">Joy Muthoni</CardTitle>
+                      <CardTitle className="text-lg text-green-900">
+                        Dr. Joy Muthoni
+                      </CardTitle>
                       <CardDescription>Lecturer</CardDescription>
                     </div>
                   </div>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">
-                  &apos;Found someone&apos;s school ID and used FindMyID to report it. The process was so simple, and I
-                    felt good knowing I helped someone get their ID back safely.&apos;
+                    &apos;Found someone&apos;s school ID and used FindMyID to
+                    report it. The process was so simple, and I felt good
+                    knowing I helped someone get their ID back safely.&apos;
                   </p>
                 </CardContent>
               </Card>
@@ -235,7 +285,12 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center gap-2 font-bold text-xl mb-4">
-                <Image src="/logo.jpeg" alt="LostFound Logo" width={60} height={60} />
+                <Image
+                  src="/logo.jpeg"
+                  alt="LostFound Logo"
+                  width={60}
+                  height={60}
+                />
                 <span>FindMyID</span>
               </div>
               <p className=" text-white text-sm">
@@ -299,7 +354,7 @@ export default function Home() {
               <h3 className="font-medium mb-4">Contact</h3>
               <ul className="space-y-2 text-sm">
                 <li className="">Email: contact@findmyid.com</li>
-                <li className="">Phone: +2 (475) 123-4567</li>
+                <li className="">Phone: +254756420875</li>
                 <li className="flex gap-4 mt-4">
                   <Link href="#" className=" hover:text-foreground">
                     <svg
@@ -362,5 +417,5 @@ export default function Home() {
         </div>
       </footer>
     </div>
-  )
+  );
 }
